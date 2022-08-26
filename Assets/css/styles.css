@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&display=swap');
 
 
 /* Variables */
@@ -6,15 +6,15 @@
   --font-family: "Lato", sans-serf;
   --normal-font: 400;
   --bold-font: 700;
-  --bg-color: hsl(0, 0%, 100%);
-  --primary-color: #4c4c4c;
-  --secondary-color: #a12525;
+  --bg-color: hsl(217, 100%, 93%);
+  --primary-color: #bcbcbc;
+  --secondary-color: #779191;
   --primary-shadow: #8b8eaf;
   --secondary-shadow: #a17a69;
   --bottom-margin: 0.5rem;
-  --bottom-margin-2: 1rem;
+  --bottom-margin-2: 4rem;
   --line-height: 1.7rem;
-  --transition: 0.7s;
+  --transition: 0.2s;
 }
 /* Variables end */
 
@@ -55,15 +55,18 @@ nav {
     z-index: 1;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 1.5rem 2.5rem;
     background-color: var(--bg-color);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 
   h1 {
-    color: var(--primary-color);
+    color: var(--secondary-color);
+    background-color: var(--bg-color);
     font-size: xxx-large;
+    text-align: center;
+    padding-top: var(--bottom-margin);
   }
   
 
@@ -75,7 +78,7 @@ nav {
 
   nav a:hover {
     color: var(--secondary-color);
-    border-bottom: 2px solid var (--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
   }
 
   nav ul {
@@ -95,14 +98,16 @@ nav {
     gap: 2rem;
     max-width: fit-content;
     margin: auto;
+    margin-bottom: var(--bottom-margin-2);
   }
 
   .intro img {
     height: 40rem;
-    width: 38rem;
+    width: 37rem;
     padding-top: 5rem;
   }
   
+  /*BIO SECTION*/
   .bio {
     width: 25rem;
     padding: 0.625rem;
@@ -116,4 +121,27 @@ nav {
 
   .bio p{
     line-height: var(--line-height);
+  }
+
+  /*ABOUT SECTION*/
+  .about{
+    background-color: var(--bg-color);
+    padding: 1rem 6rem;
+  }
+
+  .about h2{
+    margin-bottom: var(--bottom-margin);
+    text-align: center;
+    font-size: xx-large;
+  }
+
+  .about p{
+    line-height: var(--line-height);
+    padding: 1rem;
+    font-size: x-large;
+    width: 70rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
   }
